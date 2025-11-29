@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soilboy</title>
+    <link rel="stylesheet" href="/input.css">
+    <link rel="stylesheet" href="/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="bg-[#fff9f0]">
+
+    <header class="fixed top-0 left-0 w-full bg-[#fff9f0] z-50">
+        <div class="w-[85%] mx-auto flex justify-between items-center py-4">
+            <!-- Logo -->
+            <a href="/" class="flex items-center">
+                <img src="/images/Soilboy_Logo.png" alt="Soilboy Logo" class="h-12 object-contain" />
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex gap-8 text-[16px] font-medium transition-all duration-200" id="nav-links">
+                <a href="/Plants.html" class="hover:text-green-500">Plants</a>
+                <a href="/Workshop.html" class="hover:text-green-500">Workshops</a>
+                <a href="/Lifestyle.html" class="hover:text-green-500">Lifestyle</a>
+                <a href="/Contact.html" class="hover:text-green-500">Contact Us</a>
+            </nav>
+
+            <!-- Right Icons -->
+            <div class="hidden md:flex gap-6 items-center">
+                <a href="#" class="hover:text-green-500 font-medium">Login</a>
+                <a href="https://www.linkedin.com/in/muhammad-abaidullah-7b0753374/" target="_blank"
+                    class="hover:text-green-500" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M16 8a6 6 0 016 6v6h-4v-6a2 2 0 00-4 0v6h-4v-6a6 6 0 016-6zM2 9h4v12H2zM4 4a2 2 0 110 4 2 2 0 010-4z" />
+                    </svg>
+                </a>
+                <a href="#" class="relative hover:text-green-500" aria-label="Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7a1 1 0 00.9 1.5h11.2M7 13L5.4 5M16 21a1 1 0 100-2 1 1 0 000 2zm-8 0a1 1 0 100-2 1 1 0 000 2z" />
+                    </svg>
+                    <span
+                        class="absolute -top-2 -right-2 bg-green-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">0</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Menu Toggle">
+                <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="close" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 hidden" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-[#fff9f0] flex flex-col items-center gap-4 py-6 transition-all duration-500 ease-in-out">
+            <nav class="flex flex-col items-center gap-3 text-base font-medium" id="mobile-links">
+                <a href="/Plants.html" class="hover:text-green-500">Plants</a>
+                <a href="/Workshop.html" class="hover:text-green-500">Workshops</a>
+                <a href="/Lifestyle.html" class="hover:text-green-500">Lifestyle</a>
+                <a href="/Contact.html" class="hover:text-green-500">Contact Us</a>
+            </nav>
+            <div class="flex gap-6 items-center pt-2">
+                <a href="#" class="hover:text-green-500 font-medium">Login</a>
+                <a href="https://www.linkedin.com/in/muhammad-abaidullah-7b0753374/" target="_blank"
+                    class="hover:text-green-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M16 8a6 6 0 016 6v6h-4v-6a2 2 0 00-4 0v6h-4v-6a6 6 0 016-6zM2 9h4v12H2zM4 4a2 2 0 110 4 2 2 0 010-4z" />
+                    </svg>
+                </a>
+                <a href="#" class="relative hover:text-green-500" aria-label="Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7a1 1 0 00.9 1.5h11.2M7 13L5.4 5M16 21a1 1 0 100-2 1 1 0 000 2zm-8 0a1 1 0 100-2 1 1 0 000 2z" />
+                    </svg>
+                    <span
+                        class="absolute -top-2 -right-2 bg-green-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="w-[85%] mx-auto my-20 mt-30">
+
+        <!-- Product Grid -->
+        <div id="product-grid2" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+    </section>
+
+
+    <footer class="bg-black text-white py-20 mt-20">
+        <div class="w-[85%] mx-auto grid grid-cols-1 md:grid-cols-[40%_10%_10%_11%] gap-8 justify-between">
+
+            <!-- Newsletter -->
+            <div>
+                <h2 class="text-2xl sm:text-4xl font-semibold mb-6">Stay Updated</h2>
+                <p class="mb-6 text-base sm:text-lg text-gray-300">
+                    Sign up with your email address to receive news and updates.
+                </p>
+                <form class="flex flex-col sm:flex-row gap-3">
+                    <input type="email" placeholder="Email Address"
+                        class="px-4 py-4 rounded-md w-full text-black bg-white text-sm sm:text-base" />
+                    <button type="submit" class="bg-transparent border-2 hover:bg-white hover:text-black transition duration-300 
+                 px-6 sm:px-12 py-2 rounded-md text-white whitespace-nowrap text-sm sm:text-base">
+                        Sign Up
+                    </button>
+                </form>
+            </div>
+
+            <!-- Info -->
+            <div>
+                <h3 class="text-2xl sm:text-4xl font-semibold mb-6">Info</h3>
+                <ul class="space-y-2 text-gray-300 text-base sm:text-lg">
+                    <li><a href="#" class="hover:text-white">About</a></li>
+                    <li><a href="#" class="hover:text-white">Plant Care</a></li>
+                    <li><a href="#" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Follow -->
+            <div>
+                <h3 class="text-2xl sm:text-4xl font-semibold mb-6">Follow</h3>
+                <ul class="space-y-2 text-gray-300 text-base sm:text-lg">
+                    <li><a href="https://www.facebook.com" target="_blank" class="hover:text-white">Facebook</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" class="hover:text-white">Instagram</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h3 class="text-2xl sm:text-4xl font-semibold mb-6">Contact</h3>
+                <p class="text-gray-300 text-base sm:text-lg">
+                    46 Kim Yam Road<br>
+                    #02-07/8, S239351<br>
+                    <a href="mailto:hello@soilboy.sg" class="hover:text-white">
+                        hello@soilboy.sg
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div
+            class="mt-10 border-t border-gray-700 pt-4 w-[85%] mx-auto flex flex-col sm:flex-row justify-between items-center text-gray-400 text-sm sm:text-lg">
+            <p>Soilboy © 2025</p>
+            <div class="flex gap-6 mt-2 sm:mt-0">
+                <a href="/faq" class="hover:text-white">FAQs & Delivery</a>
+                <a href="/privacy-policy" class="hover:text-white">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="/index.js" defer></script>
+
+
+    <script>
+
+        const products = [
+            { img: "/images/Gallery-img-1.png", title: "Pachira Aquatica", price: "SGD 98.00" },
+            { img: "/images/Gallery-img-2.png", title: "Olive Tree (30-40cm)", price: "SGD 118.00" },
+            { img: "/images/Gallery-img-3.png", title: "Asparagus Ferns", price: "from SGD 78.00" },
+            { img: "/images/Gallery-img-4.png", title: "Young Bottle Tree", price: "SGD 457.00" },
+            { img: "/images/Gallery-img-5.png", title: "Juniper Bonsai 5 Tiers", price: "from SGD 205.00" },
+            { img: "/images/Gallery-img-6.png", title: "Three Leaf Clover", price: "from SGD 781.00" },
+            { img: "/images/Gallery-img-7.png", title: "Welwitschia mirabilis", price: "from SGD 678.00" },
+            { img: "/images/Gallery-img-8.png", title: "Decarya Madagascariensis", price: "SGD 348.00" },
+            { img: "/images/Gallery-img-9.png", title: "Pachypodium Gracilius", price: "from SGD 573.00" },
+        ];
+
+        const grid = document.getElementById("product-grid2");
+
+        products.forEach(product => {
+            const card = document.createElement("div");
+            card.className = "group w-full";
+
+            card.innerHTML = `
+        <div class="relative w-full h-[550px] overflow-hidden shadow-md">
+          <img src="${product.img}" alt="${product.title}"
+            class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110">
+        </div>
+        <div class="mt-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-800 group-hover:text-green-700 transition-colors duration-300">
+            ${product.title}
+          </h3>
+          <p class="text-green-700 font-medium">${product.price}</p>
+        </div>
+      `;
+
+            grid.appendChild(card);
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
